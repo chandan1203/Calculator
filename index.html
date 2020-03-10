@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="main_form">
+		<div class="header">
+			<h2>Simple calculator</h2>
+		</div>
+		<div class="main">
+			<form name="myForm">
+				<input type="text" name="textview" class="textview" placeholder="0" desabled>
+			</form>
+			<table>
+				<tr>
+					<td><input type="button" class="button gray symbol" name="" value="&#8730;" onclick="SR('r')" id='r' desabled></td>
+					<td><input type="button" class="button gray symbol" name="" value="x&#178;" onclick="SR('s')" id='s' desabled></td>
+					<td><input type="button" class="button gray symbol" name="" value="&#8592;" onclick="back()"></td>
+					<td><input type="button" class="button blue symbol" name="" value="&#247" onclick= "insertOp('/')"></td>
+				</tr>
+					<tr>
+					<td><input type="button" class="button gray number" name="" value="7" onclick= "insertNum(7)"></td>
+					<td><input type="button" class="button gray number" name="" value="8" onclick= "insertNum(8)"></td>
+					<td><input type="button" class="button gray number" name="" value="9" onclick= "insertNum(9)"></td>
+					<td><input type="button" class="button blue symbol" name="" value="x" onclick= "insertOp('*')"></td>
+				</tr>
+					<tr>
+					<td><input type="button" class="button gray number" name="" value="4" onclick= "insertNum(4)"></td>
+					<td><input type="button" class="button gray number" name="" value="5" onclick= "insertNum(5)"></td>
+					<td><input type="button" class="button gray number" name="" value="6" onclick= "insertNum(6)"></td>
+					<td><input type="button" class="button blue symbol" name="" value="-" onclick= "insertOp('-')"></td>
+				</tr>
+					<tr>
+					<td><input type="button" class="button gray number" name="" value="1" onclick= "insertNum(1)"></td>
+					<td><input type="button" class="button gray number" name="" value="2" onclick= "insertNum(2)"></td>
+					<td><input type="button" class="button gray number" name="" value="3" onclick= "insertNum(3)"></td>
+					<td><input type="button" class="button blue symbol" name="" value="+" onclick= "insertOp('+')"></td>
+				</tr>
+					<tr>
+					<td><input type="button" class="button gray symbol" name="" value="C" onclick= "clean()"></td>
+					<td><input type="button" class="button gray number" name="" value="0" onclick= "insertNum(0)"></td>
+					<td><input type="button" class="button gray symbol" name="" value="." onclick= "insertDec()"></td>
+					<td><input type="button" class="button blue symbol" name="" value="=" onclick="equalTo()" ></td>
+				</tr>
+			</table>
+		</div>
+		<div class="footer">
+			<h2>Made by Chandan Kumar Sharma</h2>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="calculation.js"></script>
+
+</body>
+</html>
